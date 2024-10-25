@@ -17,11 +17,19 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>shop_common</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+    </dependencies>
+
     <profiles>
         <profile>
             <id>prom</id>
             <build>
-                <finalName>Pharmacy</finalName>
+                <finalName>pharmacy</finalName>
                 <plugins>
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
@@ -55,7 +63,7 @@
         <profile>
             <id>test</id>
             <build>
-                <finalName>Pharmacy</finalName>
+                <finalName>pharmacy</finalName>
                 <plugins>
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
@@ -87,13 +95,5 @@
             </build>
         </profile>
     </profiles>
-
-    <dependencies>
-        <dependency>
-            <groupId>org.example</groupId>
-            <artifactId>shop_common</artifactId>
-            <version>1.0.0</version>
-        </dependency>
-    </dependencies>
 
 </project>
